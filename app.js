@@ -56,7 +56,7 @@ client.on('message', msg => {
   if (msg.body == '!ping') {
     msg.reply('pong');
   } else if (msg.body == 'success') {
-    msg.reply('Terimakasih telah berdonasi di campaign sahabatkebaikan.com');
+    msg.reply('Terimakasih telah berdonasi di campaign SahabatKebaikan');
   } else if (msg.body == '!groups') {
     client.getChats().then(chats => {
       const groups = chats.filter(chat => chat.isGroup);
